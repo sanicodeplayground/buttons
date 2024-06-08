@@ -1,3 +1,6 @@
+import { Card } from '@/components/Card';
+import { BUTTONS } from '../data/buttons';
+
 export default function Home() {
   return (
     <div className="relative mx-auto min-h-screen w-full max-w-screen-lg pb-12 px-2">
@@ -29,12 +32,13 @@ export default function Home() {
         </section>
         <section className="mx-auto">
           <div className="grid grid-cols-2 gap-2 sm:cols-2 md:grid-cols-3 lg:grid-cols-4">
-            <div className="relative flex items-center justify-center bg-neutral-800 rounded-md px-0 py-24 md:px-2">
-              <div className="absolute right-2 top-2 cursor-pointer bg-transparent p-2">
-                icon
-              </div>
-              dello
-            </div>
+            {BUTTONS?.map(Comp => {
+              return (
+                <Card>
+                  <Comp />
+                </Card>
+              );
+            })}
           </div>
         </section>
       </main>
