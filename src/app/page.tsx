@@ -20,7 +20,7 @@ export default function Home() {
               <div className="text-neutral-400">
                 <p>
                   Discover a collection of Tailwind CSS buttons designed to
-                  enhance your website's look.
+                  enhance your website&apos;s look.
                 </p>
                 <p>Easy to integrate with a copy-paste, no js</p>
               </div>
