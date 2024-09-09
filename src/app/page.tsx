@@ -1,3 +1,4 @@
+// Import card component and buttons data file
 import { Card } from '@/components/Card';
 import { BUTTONS } from '../data/buttons';
 
@@ -25,16 +26,16 @@ export default function Home() {
                   Discover a collection of Tailwind CSS buttons designed to
                   enhance your website&apos;s look.
                 </p>
-                <p>Easy to integrate with a copy-paste, no js</p>
+                <p>Easy to integrate with a copy-paste, no JavaScript 🙅‍♀️</p>
               </div>
             </div>
           </div>
         </section>
         <section className="mx-auto">
           <div className="grid grid-cols-2 gap-2 sm:cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {BUTTONS?.map(Comp => {
+            {BUTTONS?.map((Comp, i) => {
               return (
-                <Card>
+                <Card key={i}>
                   <Comp />
                 </Card>
               );
