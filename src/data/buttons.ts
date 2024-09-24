@@ -27,6 +27,10 @@ import HoverMeTextRush from '@/buttons/HoverMeTextRush';
 import HoverMeBGUp from '@/buttons/HoverMeBGUp';
 import HoverMeBGRight from '@/buttons/HoverMeBGRight';
 import HoverMeBGCorner from '@/buttons/HoverMeBGCorner';
+import HoverMe3D from '@/buttons/HoverMe3D';
+import HoverArrowSlide from '@/buttons/HoverArrowSlide';
+import HoverArrowExpand from '@/buttons/HoverArrowExpand';
+import HoverLinkSlide from '@/buttons/HoverLinkSlide';
 
 // Array of button names
 export const BUTTONS = [
@@ -58,4 +62,8 @@ export const BUTTONS = [
   HoverMeBGUp,
   HoverMeBGRight,
   HoverMeBGCorner,
+  HoverMe3D,
+  HoverArrowSlide,
+  HoverArrowExpand,
+  HoverLinkSlide,
 ];
